@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd ">
+	<bean name="user" class="xk.com.model.User">
+		<property name="name" value="mary"></property>
+		<property name="age" value="22"></property>
+		<property name="computer" ref="computer"></property>
+	</bean>
+	<bean name="computer" class="xk.com.model.Computer">
+		<property name="logo" value="DELL"></property>
+		<property name="price" value="5000"></property>
+	</bean>
+</beans>
